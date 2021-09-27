@@ -84,32 +84,31 @@ public class Main {
             }
         }
 
-            if (is31 && day <= 31) {
-                valid=true;
-                System.out.println(month + " " + "se finit le 31");
-            } else if (month == 2 && day==29 && bisextil == true) {
-                System.out.println(month + " " + "se finit le 29");
-                valid=true;
-            }  else if (month == 2 && day==29 && bisextil == false) {
-                System.out.println(month + " " + "se finit le 28");
-                valid = false;
-            } else if (month != 2 && is31 == false && day<=30){
-                System.out.println(month + " " + "se finit le 30");
-                valid = true;
-            } else {
-                valid = false;
-            }
-
-            if (valid == true) {
-                System.out.println(day + "/"  + month + "/" + année + " " + "est une date valide !");
-            } else {
-
-                System.out.println(day + "/" + month + "/" + année + " " + "est une date invalide !");
-            }
-
-            }
-
+        if (is31 && day <= 31) {
+            valid=true;
+            System.out.println(month + " " + "se finit le 31");
+        } else if (month == 2 && day==29 && bisextil == true) {
+            System.out.println(month + " " + "se finit le 29");
+            valid=true;
+        }  else if (month == 2 && day==29 && bisextil == false) {
+            System.out.println(month + " " + "se finit le 28");
+            valid = false;
+        } else if (month != 2 && is31 == false && day<=30){
+            System.out.println(month + " " + "se finit le 30");
+            valid = true;
+        } else {
+            valid = false;
         }
+
+        if (valid == true) {
+            System.out.println(day + "/"  + month + "/" + année + " " + "est une date valide !");
+        } else {
+            System.out.println(day + "/" + month + "/" + année + " " + "est une date invalide !");
+        }
+
+    }
+
+}
 
 
 
