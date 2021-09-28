@@ -23,8 +23,9 @@ public class Main {
             System.out.println(Math.pow(a, b));
         }
         int c = 9;
+            System.out.println("Table de multiplication de " + c + ": \n");
         for (int d = 0; d <= 10; d++) {
-            System.out.println("Table de multiplication de " + c + " : " + c * d);
+            System.out.println(c + " * " + d + " = " + c * d);
         }
         int M = 500;
         int sum = 0;
